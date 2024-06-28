@@ -1,7 +1,7 @@
 @import "/src/assets/css/_full-calendar.css";
 @import "/src/assets/css/_satoshi.css";
+@import "/src/assets/css/_ubuntu.css";
 @import "/src/assets/css/_box.css";
-
 @import 'reactflow/dist/style.css';
 @import "react-datepicker/dist/react-datepicker.css";
 
@@ -14,7 +14,7 @@
 html {
     body {
         @apply dark:bg-slate-900;
-        font-family: theme("fontFamily.satoshi"), sans-serif;
+        font-family: theme("fontFamily.ubuntu"), sans-serif;
     }
 
     .sub-menu-item {

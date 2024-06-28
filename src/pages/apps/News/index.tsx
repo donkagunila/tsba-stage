@@ -11,20 +11,32 @@ const NewsPage = () => {
 
     const items = [
         {
-            title: "The Dawn of Innovation",
+            title: "TSBA WELCOMES THE BEGINNING OF REFORMS IN SPORTS BETTING TAXATION",
             description: "Explore the birth of groundbreaking ideas and inventions.",
             header: <Skeleton/>,
             icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500"/>,
         },
         {
-            title: "The Digital Revolution",
+            title: "Sports Betting Earns Govt Tens of Billions in Revenue",
             description: "Dive into the transformative power of technology.",
             header: <Skeleton/>,
             icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
         },
         {
-            title: "The Art of Design",
+            title: "Taxation in Tanzania not Economically Viable",
             description: "Discover the beauty of thoughtful and functional design.",
+            header: <Skeleton/>,
+            icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
+        },
+        {
+            title: "Implications of Tax in International Markets",
+            description: "If The Regulator and The Operators Cannot Identify Common Grounds for Cooperation",
+            header: <Skeleton/>,
+            icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
+        },
+        {
+            title: "Regulator and The Operators",
+            description: "If The Regulator and The Operators Cannot Identify Common Grounds for Cooperation",
             header: <Skeleton/>,
             icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
         },]
@@ -32,7 +44,7 @@ const NewsPage = () => {
         <div>
             <PageHeader title={"News and Events"} className={"px-4"}/>
 
-            <section>
+            <section className="my-20">
                 <BentoGrid className="my-12 mx-auto">
                     {items.map((item, i) => (
                         <BentoGridItem

@@ -17,7 +17,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                satoshi: ['Satoshi']
+                ubuntu: ['Ubuntu']
             },
             fontSize: {
                 xss: '0.6rem'
