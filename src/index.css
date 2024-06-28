@@ -1,0 +1,75 @@
+@import "/src/assets/css/_full-calendar.css";
+@import "/src/assets/css/_satoshi.css";
+@import "/src/assets/css/_box.css";
+
+@import 'reactflow/dist/style.css';
+@import "react-datepicker/dist/react-datepicker.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    body {
+        @apply dark:bg-slate-900;
+        font-family: theme("fontFamily.satoshi"), sans-serif;
+    }
+
+    .sub-menu-item {
+        @apply px-4 py-3 text-sm rounded-md text-white flex justify-start items-center gap-2 transition-all ease-in;
+    }
+
+    .sub-menu-item.active {
+        @apply bg-white/10;
+
+        .sum-menu-dot {
+            @apply border border-white;
+        }
+    }
+
+
+    .react-datepicker__month-container {
+        @apply border-none;
+    }
+
+    .react-datepicker__day--in-range {
+        @apply bg-primary text-white;
+    }
+}
+
+.react-datepicker {
+    @apply bg-white dark:bg-slate-900 border-none flex;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.react-datepicker__header {
+    @apply bg-white dark:bg-slate-900 border-none py-5 px-5;
+}
+
+.react-datepicker__current-month {
+    @apply text-slate-500;
+
+}
+
+.react-datepicker__day-names,
+.react-datepicker__day-name {
+    @apply text-slate-500 !important;
+}
+
+.list-pagination-prev {
+    @apply flex justify-center ;
+}
+
+.page-link {
+    @apply flex justify-center items-center px-4 text-slate-500 text-xs hover:bg-primary hover:text-white transition duration-200;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/* Texts */
+
