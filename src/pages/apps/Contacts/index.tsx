@@ -128,7 +128,7 @@ const Contacts = () => {
                                             id=""
                                             placeholder="Enter your message"
                                             className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
-                                            rows="4"
+                                            rows={4}
                                         ></textarea>
                                                 </div>
                                             </div>
