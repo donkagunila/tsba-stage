@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import {ChevronDownIcon, PhoneIcon, PlayCircleIcon} from '@heroicons/react/20/solid'
 import {Dialog, Disclosure, Popover} from "@headlessui/react";
+import {Link, NavLink} from "react-router-dom";
 
 const products = [
     {name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon},
@@ -35,11 +36,11 @@ export default function Header() {
         <header className="bg-white">
             <nav className="mx-auto flex items-center justify-between p-6 lg:px-28" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <Link to="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img className="h-[70px] w-auto"
                              src="/img/logo.svg" alt=""/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -99,22 +100,35 @@ export default function Header() {
                     {/*    </Popover.Panel>*/}
                     {/*</Popover>*/}
 
-                    <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/" className="nav-link text-sm font-semibold leading-6 text-gray-900">
                         Home
-                    </a>
+                    </NavLink>
 
-                    <a href="/principles" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/principles" className="nav-link  text-sm font-semibold leading-6 text-gray-900">
                         Principles
-                    </a>
+                    </NavLink>
 
 
-                    <a href="/members" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/members" className="nav-link  text-sm font-semibold leading-6 text-gray-900">
                         Members
-                    </a>
+                    </NavLink>
 
-                    <a href="/news" className="text-sm font-semibold leading-6 text-gray-900">
-                        News
-                    </a>
+                    <NavLink to="/management" className="nav-link  text-sm font-semibold leading-6 text-gray-900">
+                        Management
+                    </NavLink>
+
+
+                    <NavLink to="/news" className="nav-link  text-sm font-semibold leading-6 text-gray-900">
+                        News & Events
+                    </NavLink>
+
+                    <NavLink to="/gallery" className="nav-link text-sm font-semibold leading-6 text-gray-900">
+                        Gallery
+                    </NavLink>
+
+                    {/*<a href="/news" className="text-sm font-semibold leading-6 text-gray-900">*/}
+                    {/*    Trainings*/}
+                    {/*</a>*/}
 
                 </Popover.Group>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -128,7 +142,7 @@ export default function Header() {
                 <Dialog.Panel
                     className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"

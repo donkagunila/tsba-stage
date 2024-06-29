@@ -3,6 +3,7 @@ import {BentoGrid, BentoGridItem} from "../../../components/ui/bento-grid.tsx";
 import {IconClipboardCopy, IconFileBroken, IconSignature,} from "@tabler/icons-react";
 import Marquee from "react-fast-marquee";
 import {Play} from "lucide-react";
+import HeaderSlider from "../../../components/ui/header-slider.tsx";
 
 
 const Skeleton = () => (
@@ -14,19 +15,19 @@ const HomePage = () => {
 
     const items = [
         {
-            title: "The Dawn of Innovation",
+            title: "TSBA WELCOMES THE BEGINNING OF REFORMS IN SPORTS BETTING TAXATION",
             description: "Explore the birth of groundbreaking ideas and inventions.",
             header: <Skeleton/>,
             icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500"/>,
         },
         {
-            title: "The Digital Revolution",
+            title: "Sports Betting Earns Govt Tens of Billions in Revenue",
             description: "Dive into the transformative power of technology.",
             header: <Skeleton/>,
             icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
         },
         {
-            title: "The Art of Design",
+            title: "Taxation in Tanzania not Economically Viable",
             description: "Discover the beauty of thoughtful and functional design.",
             header: <Skeleton/>,
             icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
@@ -35,7 +36,8 @@ const HomePage = () => {
         <div>
 
             <section className="mx-[96px]">
-                <div className="min-h-[calc(100vh-100px)] bg-primary text-white rounded-xl p-3">
+                <div className="min-h-[calc(100vh-200px)] bg-primary text-white rounded-xl">
+                    <HeaderSlider/>
                 </div>
             </section>
 

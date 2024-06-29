@@ -99,6 +99,12 @@ const Footer = () => {
                                    className="flex text-base text-white transition-all duration-200 hover:text-amber-600 focus:text-amber-600"> Privacy
                                     Policy </a>
                             </li>
+
+                            <li>
+                                <a href="/terms-and-conditions" title=""
+                                   className="flex text-base text-white transition-all duration-200 hover:text-amber-600 focus:text-amber-600">
+                                    Responsible Gaming</a>
+                            </li>
                         </ul>
                     </div>
 

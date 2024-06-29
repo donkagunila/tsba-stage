@@ -56,7 +56,7 @@ const PageHeader = ({title, className, children}: PageHeaderProps) => {
                         </div>
                         <div className="flex justify-between items-center">
                             <div>
-                                <h2 className="text-4xl font-semibold text-center">{title}</h2>
+                                <h2 className="text-4xl font-semibold text-center max-w-7xl">{title}</h2>
                             </div>
                             {children}
                         </div>

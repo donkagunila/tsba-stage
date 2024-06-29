@@ -5,6 +5,7 @@ import NewsPage from "../pages/apps/News";
 import Contacts from "../pages/apps/Contacts";
 import MembersPage from "../pages/apps/Members";
 import PrinciplesPage from "../pages/apps/Principles";
+import NewsDetails from "../pages/apps/News/news-details.tsx";
 
 
 function Router() {
@@ -22,6 +23,10 @@ function Router() {
                     element: <NewsPage/>
                 },
                 {
+                    path: "/news/:id",
+                    element: <NewsDetails/>
+                },
+                {
                     path: "/contact-us",
                     element: <Contacts/>
                 },
@@ -31,6 +36,14 @@ function Router() {
                 },
                 {
                     path: "/principles",
+                    element: <PrinciplesPage/>
+                },
+                {
+                    path: "/management",
+                    element: <PrinciplesPage/>
+                },
+                {
+                    path: "/gallery",
                     element: <PrinciplesPage/>
                 },
             ]
